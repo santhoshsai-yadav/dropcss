@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#check{
+    display: none;
+}
+.drops{
+    display: flex;
+    background-color:white;
+    width: 250px;
+    justify-content: space-around;
+    text-transform: capitalize;
+    height: 30px;
+    align-items: center;
+   
+}
+.dropdowns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.droplinks li{
+    list-style-type: none;
+    padding: 10px;
+}
+.droplinks{
+    margin-top: 10px;
+  background-color: white;
+    width: 250px;
+    text-transform: capitalize;
+    display: none;
+    flex-direction: column;
+
+}
+#check:checked~.droplinks{
+display: flex;
+}
+.droplinks li:hover{
+    background-color: #eaeded;
+} 
+body{
+    background-color: #e4f2fd;
+}
